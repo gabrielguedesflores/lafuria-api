@@ -17,4 +17,12 @@ export class OrdersService {
     async findAll(): Promise<OrderDocument[]> {
         return this.orderModel.find().exec();
     }
+
+    async update(id: string, updatedOrder: OrderDocument) {
+        return this.orderModel.findByIdAndUpdate(id, updatedOrder, { new: true });
+    }
+    
+    async delete(id: string) {
+        return this.orderModel.findByIdAndDelete(id);
+    }
 }
