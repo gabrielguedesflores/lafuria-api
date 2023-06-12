@@ -21,18 +21,22 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@commitlint/cli": "^17.6.5",
     "@nestjs/common": "^9.0.0",
     "@nestjs/config": "^2.3.2",
     "@nestjs/core": "^9.0.0",
     "@nestjs/mongoose": "^9.2.2",
     "@nestjs/platform-express": "^9.0.0",
     "@nestjs/swagger": "^6.3.0",
+    "git-cz": "^4.9.0",
+    "lint-staged": "^13.2.2",
     "mongoose": "^7.2.3",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.2.0",
     "swagger-ui-express": "^4.6.3"
   },
   "devDependencies": {
+    "@commitlint/config-conventional": "^17.6.5",
     "@nestjs/cli": "^9.0.0",
     "@nestjs/schematics": "^9.0.0",
     "@nestjs/testing": "^9.0.0",
