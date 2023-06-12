@@ -16,6 +16,10 @@ export class Product {
 
     @Prop()
     @ApiProperty()
+    price: number;
+
+    @Prop()
+    @ApiProperty()
     category: string;
 }
 

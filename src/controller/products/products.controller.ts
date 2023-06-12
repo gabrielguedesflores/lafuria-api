@@ -41,10 +41,4 @@ export class ProductsController {
         return this.productsService.delete(id);
     }
 
-    @Get('with-orders')
-    @ApiOperation({ summary: 'Get all products with orders' })
-    @ApiResponse({ status: 200, description: 'Return all products with their respective orders.' })
-    async findProductsWithOrders() {
-        return this.productsService.findProductsWithOrders();
-    }
 }
