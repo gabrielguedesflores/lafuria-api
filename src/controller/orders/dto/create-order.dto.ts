@@ -1,6 +1,12 @@
-export class CreateOrderDto {
-  readonly number: string;
-  readonly date: Date;
-  readonly table: number;
-  readonly status: string;
+export interface ICreateOrderDto {
+  customer: string,
+  items: [],
+  total: number,
+  status: string,
+  notes: string;
+  date: Date;
+}
+
+export interface ICreateOrderResultDto {
+  status: string;
 }

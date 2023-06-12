@@ -6,17 +6,18 @@ export type OrderDocument = Order & Document;
 
 @Schema()
 export class Order {
-    @Prop()
-    @ApiProperty()
-    number: number;
 
     @Prop()
     @ApiProperty()
-    datetime: Date;
+    customer: string;
+
+    @Prop()
+    @ApiProperty()
+    items: [];
     
     @Prop()
     @ApiProperty()
-    table: number;
+    total: number;
 
     @Prop()
     @ApiProperty()
@@ -24,7 +25,11 @@ export class Order {
 
     @Prop()
     @ApiProperty()
-    observation: string;
+    notes: string;
+
+    @Prop()
+    @ApiProperty()
+    date: Date;
 }
 
 export const OrderSchema = SchemaFactory.createForClass(Order);

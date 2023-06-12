@@ -8,7 +8,8 @@ import { ProductsModule } from 'src/controller/products/products.module';
   imports: [
     ConfigModule.forRoot({ isGlobal: true }),
     MongooseModule.forRoot(process.env.URI_MONGODB),
-    ProductsModule
+    ProductsModule, 
+    OrdersModule
   ],
   controllers: [],
   providers: [],
