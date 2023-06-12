@@ -55,7 +55,7 @@ $ npm run start
 
 # Ou inicie o servidor em modo de observação (hot-reload)
 $ npm run start:dev
-
+```
 
 ## Test
 
