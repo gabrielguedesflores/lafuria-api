@@ -45,6 +45,18 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
+## Documentação - Swagger
+
+Para acessar a documentação Swagger da API, inicie o servidor (consulte as instruções de início abaixo, se necessário) e navegue até `http://localhost:3000/docs` em seu navegador web.
+
+```bash
+# Iniciar o servidor de desenvolvimento
+$ npm run start
+
+# Ou inicie o servidor em modo de observação (hot-reload)
+$ npm run start:dev
+
+
 ## Test
 
 ```bash
