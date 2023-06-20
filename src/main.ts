@@ -8,10 +8,10 @@ async function bootstrap() {
     .setTitle('LaFuria API')
     .setDescription('Documentação')
     .setVersion('1.0')
-    .addTag('exemplo')
     .build();
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('docs', app, document);
+  app.enableCors();
   const port = 3000;
   await app.listen(port, '0.0.0.0');
   console.log(`Application is running on: ${await app.getUrl()}`);

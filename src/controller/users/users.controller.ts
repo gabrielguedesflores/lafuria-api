@@ -20,7 +20,7 @@ export class UsersController {
     @ApiOperation({ summary: 'Create a user' })
     @ApiResponse({ status: 201, description: 'The user has been successfully created.' })
     @ApiBody({ type: User })
-    async create(@Body() user: UserDocument): Promise<ICreateUserDTO> {
+    async create(@Body() user: UserDocument) {
         return this.userService.create(user);
     }
 

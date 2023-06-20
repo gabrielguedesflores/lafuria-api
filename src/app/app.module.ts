@@ -9,8 +9,8 @@ import { UsersModule } from 'src/controller/users/users.module';
   imports: [
     ConfigModule.forRoot({ isGlobal: true }),
     MongooseModule.forRoot(process.env.URI_MONGODB),
-    ProductsModule, 
     OrdersModule,
+    ProductsModule, 
     UsersModule
   ],
   controllers: [],
